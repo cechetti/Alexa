@@ -1,0 +1,400 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "meu afinador",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancelar ",
+                        "cancele por favor",
+                        "gostaria de cancelar"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "qual é a afinação padrão do violão",
+                        "como afinar um violão",
+                        "o que você entende",
+                        "o que você atende",
+                        "o que você sabe fazer",
+                        "o que você sabe",
+                        "do que você sabe",
+                        "o que você sabe responder",
+                        "tem manual de instruções",
+                        "o que posso falar",
+                        "o que posso pedir",
+                        "o que eu posso fazer",
+                        "quero um passo a passo",
+                        "gostaria das instruções",
+                        "me explique o que faz isso",
+                        "ajuda ajuda",
+                        "gostaria de um ajuda",
+                        "como faço isso",
+                        "me dê uma ajuda"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "nenhuma das anteriores",
+                        "nenhuma opção",
+                        "nenhuma corda",
+                        "nenhuma nota",
+                        "nenhuma delas não",
+                        "nenhuma delas",
+                        "nenhuma",
+                        "terminou",
+                        "acabou",
+                        "mais nenhuma",
+                        "não nenhuma",
+                        "nenhuma não",
+                        "agora não vai mais nada",
+                        "já é para parar ",
+                        "não preciso de mais nada",
+                        "não preciso mais",
+                        "terminado",
+                        "terminei",
+                        "nada mais",
+                        "gostaria de para então",
+                        "agora quero parar a afinação",
+                        "nenhuma dessas",
+                        "parar por favor",
+                        "por favor parar",
+                        "pode para com isso",
+                        "não quero mais nada",
+                        "nenhuma das opções",
+                        "não quero nenhuma não",
+                        "não quero nenhuma",
+                        "nenhuma agora",
+                        "nenhuma mais",
+                        "não dá mais não",
+                        "não aguento mais",
+                        "pode parar agora",
+                        "já está tudo afinado",
+                        "já está tudo certo",
+                        "quero parar este afinador",
+                        "pare com a afinação",
+                        "pare de tocar",
+                        "chega disso",
+                        "por favor pare",
+                        "pare por favor",
+                        "gostaria de parar"
+                    ]
+                },
+                {
+                    "name": "PlayIntent",
+                    "slots": [
+                        {
+                            "name": "Chord",
+                            "type": "NoteSlot"
+                        },
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Ordinal",
+                            "type": "AMAZON.Ordinal"
+                        }
+                    ],
+                    "samples": [
+                        "e {Ordinal} corda",
+                        "e corda {Number}",
+                        "e nota {Chord}",
+                        "e corda {Chord}",
+                        "e {Chord}",
+                        "agora vou querar a {Ordinal}",
+                        "agora vou querar a {Ordinal} corda",
+                        "agora vou querer a corda {Number}",
+                        "agora vou querer {Chord} as cordas",
+                        "agora vou querer a corda {Chord}",
+                        "agora vou querar a nota {Chord}",
+                        "agora vou querer {Chord}",
+                        "quero {Chord} sim",
+                        "vou querer agora a corda {Number}",
+                        "vou querar agora a {Ordinal} corda",
+                        "vou querer agora um {Chord}",
+                        "toque agora um {Chord}",
+                        "toque agora {Chord}",
+                        "agora {Chord}",
+                        "alternativa {Ordinal}",
+                        "alternativa {Number}",
+                        "alternativa {Chord}",
+                        "opção {Chord}",
+                        "opção {Ordinal}",
+                        "opção {Number}",
+                        "confirma {Chord}",
+                        "{Chord} confirma",
+                        "{Number} sim",
+                        "sim {Number}",
+                        "{Chord} sim",
+                        "sim {Chord}",
+                        "desta vez me dê a {Ordinal} corda",
+                        "desta vez toque {Chord}",
+                        "desta vez me dê um {Chord}",
+                        "{Ordinal} corda desta vez",
+                        "{Ordinal} corda por favor",
+                        "por favor a {Ordinal} corda agora",
+                        "sim quero a {Ordinal} corda",
+                        "sim quero a corda {Number}",
+                        "por favor {Chord}",
+                        "{Chord} por favor",
+                        "sim quero corda {Chord}",
+                        "sim quero {Chord}",
+                        "som do {Chord} em quatrocentos e quarenta hertz",
+                        "faça uma {Chord}",
+                        "faz uma {Chord}",
+                        "afina a corda {Chord}",
+                        "afine a corda {Chord}",
+                        "afinar a corda {Chord}",
+                        "som da corda {Chord}",
+                        "toque {Chord} as cordas",
+                        "repete {Chord} as cordas",
+                        "repete a corda {Chord}",
+                        "repetir a {Ordinal} corda mais uma vez",
+                        "repete a corda {Number} de novo",
+                        "repete {Chord} de novo",
+                        "repetir {Chord} mais uma vez",
+                        "repita {Chord} de novo",
+                        "toca a {Ordinal} corda",
+                        "tocar a {Ordinal} corda",
+                        "toque a {Ordinal} corda",
+                        "toca corda de número {Number}",
+                        "toque corda de número {Number}",
+                        "tocar corda de número {Number}",
+                        "corda de número {Number}",
+                        "número de corda {Number}",
+                        "número da corda {Number}",
+                        "toqua a nota da {Ordinal} corda na afinação padrão do violão",
+                        "toque a nota da {Ordinal} corda do violão",
+                        "tocar a nota da {Ordinal} corda",
+                        "toque a nota da {Ordinal} corda",
+                        "toca a nota da {Ordinal} corda",
+                        "toca a nota da corda {Chord}",
+                        "toque a nota da corda {Chord}",
+                        "tocar a nota da corda {Chord}",
+                        "tocar as notas das cordas {Chord}",
+                        "som do {Chord} em hertz",
+                        "som do {Chord} de quatrocentos hertz",
+                        "som do {Chord} de quatrocentos e quarenta hertz",
+                        "som da {Chord}",
+                        "som de {Chord}",
+                        "som do {Chord}",
+                        "refazer {Ordinal}",
+                        "refazer {Number}",
+                        "refazer {Chord}",
+                        "{Ordinal} corda de novo",
+                        "a corda {Number} de novo",
+                        "{Chord} de novo",
+                        "de novo a {Ordinal}",
+                        "de novo a corda {Number}",
+                        "de novo {Chord}",
+                        "mais uma vez a {Ordinal} corda",
+                        "mais uma vez a corda {Number}",
+                        "mais uma vez {Chord}",
+                        "repete a {Ordinal}",
+                        "repete a corda {Number}",
+                        "repete {Chord}",
+                        "repetir a corda {Ordinal}",
+                        "repetir a corda {Number}",
+                        "repetir {Chord}",
+                        "repita a {Ordinal} corda",
+                        "repita a corda {Number}",
+                        "repita {Chord}",
+                        "repassa a {Ordinal} corda",
+                        "repassa a corda {Number}",
+                        "repassa a {Chord}",
+                        "repassar a {Ordinal} corda",
+                        "repassar corda {Number}",
+                        "repassar {Chord}",
+                        "repasse a {Ordinal} corda",
+                        "repasse a corda {Number}",
+                        "repasse {Chord}",
+                        "corda {Number} de baixo para cima",
+                        "a {Ordinal} de baixo para cima",
+                        "número {Number}",
+                        "afinar a número {Number}",
+                        "afine a número {Number}",
+                        "afina a número {Number}",
+                        "afina a {Ordinal} corda",
+                        "afinar a {Ordinal} corda",
+                        "afine a {Ordinal} corda",
+                        "agora me dê um {Chord}",
+                        "agora me dá um {Chord}",
+                        "isso {Number}",
+                        "isso {Ordinal}",
+                        "{Ordinal} agora",
+                        "{Chord} agora",
+                        "mais {Chord}",
+                        "desta vez {Chord}",
+                        "agora um {Chord}",
+                        "me dê {Ordinal}",
+                        "me dá {Ordinal}",
+                        "me dê {Number}",
+                        "me dá {Number}",
+                        "fazer {Ordinal}",
+                        "faça {Ordinal}",
+                        "faz {Ordinal}",
+                        "fazer {Number}",
+                        "faça {Number}",
+                        "faz {Number}",
+                        "tocar {Ordinal}",
+                        "toque {Ordinal}",
+                        "toca {Ordinal}",
+                        "tocar {Number}",
+                        "toque {Number}",
+                        "toca {Number}",
+                        "corda {Number} do violão",
+                        "{Ordinal} corda do violão",
+                        "corda violão {Ordinal}",
+                        "corda violão {Number}",
+                        "{Number} corda",
+                        "{Ordinal} corda",
+                        "corda {Ordinal}",
+                        "corda {Number}",
+                        "afina instrumento com {Chord}",
+                        "afinar instrumento musical com nota {Chord}",
+                        "afine instrumento musical com {Chord}",
+                        "dar {Chord}",
+                        "dê {Chord}",
+                        "dá {Chord}",
+                        "toca {Chord}",
+                        "faz {Chord}",
+                        "faz um {Chord}",
+                        "fazer um {Chord}",
+                        "manda um {Chord}",
+                        "corda {Chord}",
+                        "afina com {Chord}",
+                        "afine com {Chord}",
+                        "toca um {Chord}",
+                        "toque {Chord}",
+                        "tocar um {Chord}",
+                        "nota {Chord}",
+                        "afinar com {Chord}",
+                        "faça um {Chord}",
+                        "me dê um {Chord}",
+                        "dá um {Chord}",
+                        "dar um {Chord}"
+                    ]
+                },
+                {
+                    "name": "PlayIntentSlotOnly",
+                    "slots": [
+                        {
+                            "name": "Chord",
+                            "type": "NoteSlot"
+                        },
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Ordinal",
+                            "type": "AMAZON.Ordinal"
+                        }
+                    ],
+                    "samples": [
+                        "{Ordinal}",
+                        "{Number}",
+                        "{Chord}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "NoteSlot",
+                    "values": [
+                        {
+                            "id": "8",
+                            "name": {
+                                "value": "diapasão"
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "name": {
+                                "value": "todas",
+                                "synonyms": [
+                                    "cordas de seis a um",
+                                    "cordas de um a seis",
+                                    "todas as notas das cordas",
+                                    "seis cordas em sequência",
+                                    "seis corda em sequência",
+                                    "todas juntas",
+                                    "todas as seis cordas",
+                                    "seis cordas",
+                                    "sequência",
+                                    "tudo",
+                                    "todas as notas",
+                                    "todas as cordas",
+                                    "completa",
+                                    "completo",
+                                    "todos"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "name": {
+                                "value": "mi",
+                                "synonyms": [
+                                    "mi grave",
+                                    "mi grosso",
+                                    "mi grande",
+                                    "mizão"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "name": {
+                                "value": "lá"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "ré"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "sol"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "si"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "mizinha",
+                                "synonyms": [
+                                    "mizinho",
+                                    "mi agúdo",
+                                    "mi pequeno",
+                                    "mi pequena",
+                                    "mi zinha",
+                                    "mi agúda",
+                                    "mi menor",
+                                    "mi fininha",
+                                    "mi fina"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
