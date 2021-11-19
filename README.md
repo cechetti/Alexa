@@ -26,4 +26,4 @@ Also possible to ask by number 1-6 or "primeira" to "sexta" corda.
 
 ## License
 
-This sample is licensed under the Amazon Software License.
+This sample is licensed under Apache V2.0
