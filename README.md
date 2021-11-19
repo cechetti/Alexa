@@ -13,11 +13,11 @@ Current version supports pt-BR only.
 
 ### Data Source
 Based on "Hello World" Alexa Dev Portal template: https://github.com/alexa-samples/skill-sample-nodejs-hello-world/blob/master/lambda/custom/index.js 
-Audio files were recorded at home and processed using free Audacity software: https://www.audacityteam.org/
+Audio files were recorded at home and processed using free Audacity software: https://www.audacityteam.org/ to meet Alexa SSML (16000Hz, 48kbps bit rate).
 
 ### Environment Variables
 
-This is a stateless skill, no database of session variables needed. On top of index.js, there is launchDocument.json for APL. 
+This is a stateless skill, no database or session variables needed. On top of index.js, there is launchDocument.json for APL. 
 
 ## Testing the Skill
 
