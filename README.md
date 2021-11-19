@@ -1,12 +1,12 @@
 # Alexa
-Alexa Skill SDK code
+Alexa Skills Kit SDK (v2).
 
 ## Alexa Sample: Meu Afinador (Node.js)
 
 This is a Node.js Alexa-Hosted sample skill, using SSML audio and APL screen background. 
 Use case of this skill is for Guittar Tunning Purposes. 
 It starts playing all guittar chords for standard tunning (E A D G B E). 
-After that, it is possible to choose specific by chord note, number or position. 
+After that, it is possible to choose specific one by chord note, number or position. 
 Current version supports pt-BR only.  
 
 ## Getting Started
